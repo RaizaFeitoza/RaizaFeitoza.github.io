@@ -1,10 +1,11 @@
 const criaNovaLinha = (userName,id,title,completed) => {
     const linhaNovoToDos = document.createElement("tr")
+    const completedDescricao = completed ? "Completo" : "Incompleto";
     const conteudo = `
         <td class="td" data-td>${id}</td>
         <td>${title}</td>
         <td>${userName}</td>
-        <td>${completed}
+        <td>${completedDescricao}</td>
         `
     linhaNovoToDos.innerHTML = conteudo
     return linhaNovoToDos
