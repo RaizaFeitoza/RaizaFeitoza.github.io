@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Framework-Raíza</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="../assets/css/base/base.css">
+    <link rel="stylesheet" href="../assets/css/componentes/cabecalho.css">
+    <link rel="stylesheet" href="../assets/css/lista.css">
+    <link rel="stylesheet" href="../assets/css/componentes/tabela.css">
+</head>
+<body>
+    <header class="cabecalho container">
+        <img src="frame.jpg" alt="Logotipo framework" class="cabecalho__logo">
+        <nav>
+            <ul class="cabecalho__lista-navegacao">
+                <li class="cabecalho__link"><a href="lista_postagem.html">Postagens</a></li>
+                <li class="cabecalho__link"><a href="lista_album.html">Albuns</a></li>
+                <li class="cabecalho__link"><a href="lista_to_dos.html">TO-DOs</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="clientes-container">
+        <table class="tabela">
+            <thead>
+                <tr>
+                    <th class="tabela_coluna_id">Id</th>
+                    <th class="tabela_coluna_titulo">Título</th>
+                    <th class="tabela_coluna--userId">User Id</th>
+                    <th class="tabela_coluna_body"> Body</th>
+                </tr>
+            </thead>
+            <tbody data-tabela>
+            </tbody>
+        </table>
+    </main>
+</body> 
+<script src="../service/postagens-service.js"></script>
+</html>
+
